@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <Windows.h>
+#include <string>
 
 using namespace std;
 
@@ -9,12 +10,12 @@ int main()
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
 
-    char type; // тип роботи 
+    string type; // тип роботи 
     double x, y, P, S; // y - нарахована сума; P - податок; S - сума до видачі
 
-    cout << "x = \n";
+    cout << "x = ";
     cin >> x;
-    cout << "Введіть тип роботи (А,Б,В)\n"; 
+    cout << "Введіть тип роботи (А,Б,В)"; 
     cin >> type; 
     
     if (type == 'А' || type == 'а' || type == 'A' || type == 'a' )
